@@ -1,0 +1,10 @@
+name: simulate a deployment
+on:
+  repository_dispatch:
+    types: 
+      - deployment
+jobs:
+  test:
+    name: Simulate a deployment
+    runs-on: ubuntu-latest
+    steps:
